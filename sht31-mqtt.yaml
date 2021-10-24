@@ -1,0 +1,2 @@
+name: SHT31-D sensor
+entrypoint: sht31-mqtt.toit
