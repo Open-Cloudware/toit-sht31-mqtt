@@ -41,7 +41,7 @@ main:
 
   // The client is now connected.
   print "Connected to MQTT Broker @ $HOST:$PORT"
-  
+
   // Publish readings at interval of 10 seconds
   while true:
     publish client driver.read_temperature driver.read_humidity
@@ -55,9 +55,9 @@ main:
 publish client/mqtt.Client temp/float hum/float:
   // Publish message to topic
   client.publish
-    TOPIC 
+    TOPIC
     json.encode {
       "temperature": "$(%0.2f temp)",
       "humidity": "$(%0.2f hum)"
     }
-  print "Published message `$temp` on '$TOPIC'"  
+  print "Published message `$temp` on '$TOPIC'"

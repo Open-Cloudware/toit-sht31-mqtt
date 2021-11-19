@@ -1,0 +1,12 @@
+prefixes:
+  mqtt: mqtt
+  sht31_d_driver: sht31-d_driver
+packages:
+  mqtt:
+    url: github.com/toitware/mqtt
+    version: 1.1.2
+    hash: 7ff2620c895960b2c31990dd06107729bb03b94b
+  sht31-d_driver:
+    url: github.com/harshkc03/sht31-d_driver
+    version: 1.0.0
+    hash: 3c26dec0d4286279cbf1c4f9f7110974a8ab8faa
